@@ -1,0 +1,10 @@
+[Unit]
+After=getty.target
+
+[Service]
+# Credit: https://superuser.com/a/1282178
+Environment="SCRIPT_ARGS=%I"
+ExecStart=/usr/bin/auto-start-vm.sh $SCRIPT_ARGS
+
+[Install]
+WantedBy=default.target
