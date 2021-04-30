@@ -3,6 +3,8 @@
 # Tested to work on Arch Linux.
 # Credit: https://stackoverflow.com/a/47964800
 
+set -e
+
 if [ -z "$1" ]
 then
 	echo "No VM name supplied."
